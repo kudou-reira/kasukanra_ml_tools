@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  kasukanra_ml-app:
+    build: .
+    image: kasukanra_ml_tools:latest
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    volumes:
+      - /home/aikawa/stability_ai_test:/app
+      - /home/aikawa/.cache/torch/hub/checkpoints:/root/.cache/torch/hub/checkpoints
+      - /home/aikawa/.cache/huggingface/hub:/root/.cache/huggingface/hub
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            capabilities: [gpu]
+    tty: true # Keep the container running
