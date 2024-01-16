@@ -4,4 +4,4 @@ taming/
 tmp/
 __pycache__/
 outputs/
-stable-diffusion-upscaler/
+# stable-diffusion-upscaler/

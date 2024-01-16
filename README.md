@@ -1,11 +1,21 @@
 # Project Overview
-The purpose of these experiments is to establish a baseline of image to caption. Basically, we are looking for either classification labeling or image description using a lightweight transformer.
+The purpose of this repository is to create ML tools with regards to Stable Diffusion. Currently, latent upscaler from this [notebook](https://colab.research.google.com/drive/1o1qYJcFeywzCIdkfKJy7cTpgZTCM2EI4) is implemented. So, you can generate 1024 x 1024 pixel resolution images using Stable Diffusion 1.4 like so:
+
+```
+python generate_main.py --prompt "gaelle seguillon, krenz cushart, hyper realistic, low angle shot, wide lens, atmospheric perspective, golden hour, desaturated, split tone, futuristic, complex machinery, small crowds of people, terraforming, final fantasy xiv, aria the animation, venice" --seed 1214452132124
+```
+
+The current CLI command `generate_main.py` takes in the a `--prompt` and `--seed` argument.  
 
 # Relevant Resources
+[Upscaler Notebook](https://colab.research.google.com/drive/1o1qYJcFeywzCIdkfKJy7cTpgZTCM2EI4)
 
+# Experimental Images
+Please check the `examples images` for some sample images.
 
-# Dataset Images
+I've added some here for your viewing pleasure.
 
+![Alt text](URL)
 
 # How to use
 Clone this repository to your local environment.
@@ -48,9 +58,7 @@ Once you are inside the `docker` container, activate the virtual environment:
 source /venv/bin/activate
 ```
 
-After that, run one of the files.
-
 Example:
 ```
-CUDA_VISIBLE_DEVICES=0 python blip2_vanilla_grid.py
+python generate_main.py --prompt "gaelle seguillon, krenz cushart, hyper realistic, low angle shot, wide lens, atmospheric perspective, golden hour, desaturated, split tone, futuristic, complex machinery, small crowds of people, terraforming, final fantasy xiv, aria the animation, venice" --seed 1214452132124
 ```
