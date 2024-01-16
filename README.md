@@ -11,11 +11,13 @@ The current CLI command `generate_main.py` takes in the a `--prompt` and `--seed
 [Upscaler Notebook](https://colab.research.google.com/drive/1o1qYJcFeywzCIdkfKJy7cTpgZTCM2EI4)
 
 # Experimental Images
-Please check the `examples images` for some sample images.
+Please check the [examples images](https://github.com/kudou-reira/kasukanra_ml_tools/tree/main/example_images) for more sample images.
 
 I've added some here for your viewing pleasure.
 
-![Alt text](URL)
+![Alt text](https://github.com/kudou-reira/kasukanra_ml_tools/blob/main/example_images/1705389339-00-xenoblade%20landscape,%20flying%20alien%20monstrous%20beasts%20inspired%20by%20peter%20mohrbacher,%20golden%20hour,%20hypers%E2%80%A6.png?raw=true)
+
+![Alt text](https://github.com/kudou-reira/kasukanra_ml_tools/blob/main/example_images/1705388695-00-gaelle%20seguillon,%20krenz%20cushart,%20hyper%20realistic,%20low%20angle%20shot,%20wide%20lens,%20atmospheric%20perspective%E2%80%A6.png?raw=true)
 
 # How to use
 Clone this repository to your local environment.
