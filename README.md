@@ -27,6 +27,11 @@ Build it with this command:
 docker build -t kasukanra_ml_tools .
 ```
 
+## Volume Mounts
+For some reason, I wasn't able to have volume syncrhonization using relative paths. As a result, my [docker-compose file](https://github.com/kudou-reira/kasukanra_ml_tools/blob/main/docker-compose.yml#L8) is using absolute paths for the volume mounts. Make sure to change these volumes paths on your own local environment.
+
+Mounting `/.cache` saves you the trouble of having to fetch/download models every time you start up the container.
+
 Once your image has been built, start the `docker-compose` with this command:
 
 ```
